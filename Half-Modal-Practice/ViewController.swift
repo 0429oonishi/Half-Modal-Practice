@@ -7,13 +7,15 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+final class ViewController: UIViewController {
+    
+    private var halfModalPresenter = HalfModalPresenter()
 
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        // Do any additional setup after loading the view.
+    @IBAction private func showButtonDidTapped(_ sender: Any) {
+        let viewController = ModalViewController.instantiate()
+        halfModalPresenter.viewController = viewController
+        present(viewController, animated: true, completion: nil)
     }
-
 
 }
 
