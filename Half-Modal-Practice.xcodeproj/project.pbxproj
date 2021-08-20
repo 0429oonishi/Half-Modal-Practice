@@ -13,6 +13,14 @@
 		AB86A7BD26CFE80000EA990A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AB86A7BB26CFE80000EA990A /* Main.storyboard */; };
 		AB86A7BF26CFE80000EA990A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AB86A7BE26CFE80000EA990A /* Assets.xcassets */; };
 		AB86A7C226CFE80000EA990A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AB86A7C026CFE80000EA990A /* LaunchScreen.storyboard */; };
+		AB86A7CB26D0580900EA990A /* ModalTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB86A7CA26D0580900EA990A /* ModalTableViewController.swift */; };
+		AB86A7CD26D0580F00EA990A /* Modal.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AB86A7CC26D0580F00EA990A /* Modal.storyboard */; };
+		AB86A7CF26D0595900EA990A /* HalfModalOverlayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB86A7CE26D0595900EA990A /* HalfModalOverlayView.swift */; };
+		AB86A7D126D059EC00EA990A /* HalfModalIndicatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB86A7D026D059EC00EA990A /* HalfModalIndicatorView.swift */; };
+		AB86A7D326D05A4D00EA990A /* HalfModalDismissInteractiveTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB86A7D226D05A4D00EA990A /* HalfModalDismissInteractiveTransition.swift */; };
+		AB86A7D526D05E8A00EA990A /* HalfModalDismissAnimatedTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB86A7D426D05E8A00EA990A /* HalfModalDismissAnimatedTransition.swift */; };
+		AB86A7D726D0605500EA990A /* HalfModalPresentationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB86A7D626D0605500EA990A /* HalfModalPresentationController.swift */; };
+		AB86A7D926D0614E00EA990A /* HalfModalPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB86A7D826D0614E00EA990A /* HalfModalPresenter.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +32,14 @@
 		AB86A7BE26CFE80000EA990A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AB86A7C126CFE80000EA990A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AB86A7C326CFE80000EA990A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AB86A7CA26D0580900EA990A /* ModalTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModalTableViewController.swift; sourceTree = "<group>"; };
+		AB86A7CC26D0580F00EA990A /* Modal.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Modal.storyboard; sourceTree = "<group>"; };
+		AB86A7CE26D0595900EA990A /* HalfModalOverlayView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HalfModalOverlayView.swift; sourceTree = "<group>"; };
+		AB86A7D026D059EC00EA990A /* HalfModalIndicatorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HalfModalIndicatorView.swift; sourceTree = "<group>"; };
+		AB86A7D226D05A4D00EA990A /* HalfModalDismissInteractiveTransition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HalfModalDismissInteractiveTransition.swift; sourceTree = "<group>"; };
+		AB86A7D426D05E8A00EA990A /* HalfModalDismissAnimatedTransition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HalfModalDismissAnimatedTransition.swift; sourceTree = "<group>"; };
+		AB86A7D626D0605500EA990A /* HalfModalPresentationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HalfModalPresentationController.swift; sourceTree = "<group>"; };
+		AB86A7D826D0614E00EA990A /* HalfModalPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HalfModalPresenter.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,11 +76,27 @@
 				AB86A7B726CFE80000EA990A /* SceneDelegate.swift */,
 				AB86A7B926CFE80000EA990A /* ViewController.swift */,
 				AB86A7BB26CFE80000EA990A /* Main.storyboard */,
+				AB86A7CA26D0580900EA990A /* ModalTableViewController.swift */,
+				AB86A7CC26D0580F00EA990A /* Modal.storyboard */,
+				AB86A7C926D0571800EA990A /* HalfModal */,
 				AB86A7BE26CFE80000EA990A /* Assets.xcassets */,
 				AB86A7C026CFE80000EA990A /* LaunchScreen.storyboard */,
 				AB86A7C326CFE80000EA990A /* Info.plist */,
 			);
 			path = "Half-Modal-Practice";
+			sourceTree = "<group>";
+		};
+		AB86A7C926D0571800EA990A /* HalfModal */ = {
+			isa = PBXGroup;
+			children = (
+				AB86A7D826D0614E00EA990A /* HalfModalPresenter.swift */,
+				AB86A7D626D0605500EA990A /* HalfModalPresentationController.swift */,
+				AB86A7D426D05E8A00EA990A /* HalfModalDismissAnimatedTransition.swift */,
+				AB86A7D226D05A4D00EA990A /* HalfModalDismissInteractiveTransition.swift */,
+				AB86A7D026D059EC00EA990A /* HalfModalIndicatorView.swift */,
+				AB86A7CE26D0595900EA990A /* HalfModalOverlayView.swift */,
+			);
+			path = HalfModal;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -124,6 +156,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AB86A7CD26D0580F00EA990A /* Modal.storyboard in Resources */,
 				AB86A7C226CFE80000EA990A /* LaunchScreen.storyboard in Resources */,
 				AB86A7BF26CFE80000EA990A /* Assets.xcassets in Resources */,
 				AB86A7BD26CFE80000EA990A /* Main.storyboard in Resources */,
@@ -138,8 +171,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				AB86A7BA26CFE80000EA990A /* ViewController.swift in Sources */,
+				AB86A7D926D0614E00EA990A /* HalfModalPresenter.swift in Sources */,
+				AB86A7CF26D0595900EA990A /* HalfModalOverlayView.swift in Sources */,
+				AB86A7CB26D0580900EA990A /* ModalTableViewController.swift in Sources */,
+				AB86A7D126D059EC00EA990A /* HalfModalIndicatorView.swift in Sources */,
 				AB86A7B626CFE80000EA990A /* AppDelegate.swift in Sources */,
+				AB86A7D726D0605500EA990A /* HalfModalPresentationController.swift in Sources */,
+				AB86A7D526D05E8A00EA990A /* HalfModalDismissAnimatedTransition.swift in Sources */,
 				AB86A7B826CFE80000EA990A /* SceneDelegate.swift in Sources */,
+				AB86A7D326D05A4D00EA990A /* HalfModalDismissInteractiveTransition.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
